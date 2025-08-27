@@ -5,16 +5,17 @@ import Search from "./Search";
 
 function PlantPage() {
 
-  const [plants, setPlants] = useState ([]);
+  const [plants, setPlants] = useState ([]); //state for storing plants
 
-  const [searchTerm, setSearchTerm] = useState("");
+  const [searchTerm, setSearchTerm] = useState(""); //search functionality
 
+//load all plants
 useEffect(() => {
  fetch ("http://localhost:6001/plants")
   .then((response) => response.json())
   .then((plantsData => setPlants(plantsData)));
 },
-  []);
+  []); //prevents loop
 
 function handleAddPlant(newPlant) {
   setPlants([...plants, newPlant]);
