@@ -4,7 +4,7 @@ import PlantCard from "./PlantCard";
 function PlantList({plants, onToggleSoldOut }) {
   return (
     <ul className="cards">
-      {/* render PlantCards components in here */}
+      {/* render PlantCards components for each object */}
       {plants.map((plant) => (
 
       <PlantCard key={plant.id} plant={plant} onToggleSoldOut={onToggleSoldOut} />
