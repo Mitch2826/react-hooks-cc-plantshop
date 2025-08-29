@@ -1,7 +1,7 @@
 
 function PlantCard({plant, onToggleSoldOut }) {
   return (
-    /**display plant car */
+    /**display plant cardd */
     <li className="card" data-testid="plant-item">
 
       <img src={plant.image} alt={plant.name} />
