@@ -21,8 +21,8 @@ fetch("http://localhost:6001/plants", {
 },
   body: JSON.stringify(newPlant), //convert object to JSON string
 })
-.then((response) => response.json()) //
-.then((addedPlant) => { //
+.then((response) => response.json()) 
+.then((addedPlant) => { 
     if (onAddPlant) {
       onAddPlant(addedPlant);  // call the callback function to update the plant list
   }
