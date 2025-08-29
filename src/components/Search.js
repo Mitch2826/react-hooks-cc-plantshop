@@ -1,9 +1,12 @@
-import React from "react";
 
-function Search({searchTerm, onSearchChange}) {
+
+function Search({searchTerm, onSearchChange}) { //props from PlantPage
+  
   return (
+    
     <div className="searchbar">
       <label htmlFor="search">Search Plants:</label>
+      {/* input field for searching plants*/}
       <input
         type="text"
         id="search"
