@@ -1,12 +1,11 @@
-import React from "react";
 import PlantCard from "./PlantCard";
 
+//render list of all plants
 function PlantList({plants, onToggleSoldOut }) {
   return (
     <ul className="cards">
-      {/* render PlantCards components for each object */}
+      {/* map over plants array to create each plant card */}
       {plants.map((plant) => (
-
       <PlantCard key={plant.id} plant={plant} onToggleSoldOut={onToggleSoldOut} />
 
       ))}
